@@ -85,13 +85,16 @@ while running:
         player.move(-10)
     if ball.collides_with_screen():
         ball.bounce()
+    collided = False
     for brick in bricks:
         if brick.dead:
             continue
         if ball.collides_with_rect(brick.x, brick.y, BRICK_WIDTH, BRICK_HEIGHT):
             brick.die()
-            ball.bounce()
+            collided = True
     if ball.collides_with_rect(player.x, SCREEN_HEIGHT - BRICK_HEIGHT, BRICK_WIDTH, BRICK_HEIGHT):
+        collided = True
+    if collided:
         ball.bounce()
     if ball.y > SCREEN_HEIGHT:
         running = False
