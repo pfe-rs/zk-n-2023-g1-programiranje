@@ -7,9 +7,9 @@ Ukoliko se rešite da sami dodate fajlove u repozitorijum, to možete uraditi na
 1. Instalirajte [Git](https://git-scm.com/) (ako ga već nemate)
 2. Otvorite Git Bash u nekom direktorijumu
 3. Klonirajte repozitorijum:
-    1. Ukoliko nemate SSH ključ (ukoliko ne znate šta je SSH ključ najverovatnije ga nemate), pokrenite `git clone https://github.com/pfe-rs/vir3-2022-python-pygame.git`
-    2. Ukoliko imate SSH ključ, pokrenite `git clone git@github.com:pfe-rs/vir3-2022-python-pygame.git`
-4. Promenite trenutni direktorijum na repozitorijum: `cd vir3-2022-python-pygame`
+    1. Ukoliko nemate SSH ključ (ukoliko ne znate šta je SSH ključ najverovatnije ga nemate), pokrenite `git clone https://github.com/pfe-rs/zk-n-2023-g1-programiranje.git`
+    2. Ukoliko imate SSH ključ, pokrenite `git clone git@github.com:pfe-rs/zk-n-2023-g1-programiranje.git`
+4. Promenite trenutni direktorijum na repozitorijum: `cd zk-n-2023-g1-programiranje`
 5. **Napravite svoju granu:** `git checkout -b [projekat]` (zamenite `[projekat]` sa nazivom svog projekta)
     - Ukoliko ne napravite svoju granu, dobićete grešku kako nemate dozvolu za guranje koda na tu granu
 6. Dodajte fajlove svog projekta u direktorijum namenjen za projekat (po mogućstvu bez đubre fajlova poput `__pycache__`)
