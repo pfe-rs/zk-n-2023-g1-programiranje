@@ -118,7 +118,7 @@ running = True
 
 
 #Text
-font = pygame.font.Font('C:\\Users\\Petlja\\Desktop\\igrica\\mine-sweeper.ttf', 28)
+font = pygame.font.Font('mine-sweeper.ttf', 28)
 title = font.render('TRIGOCRASH', True, 'black', 'orange')
 titleRect = title.get_rect()
 titleRect.center = (SCREEN_WIDTH // 2, 20)
@@ -129,7 +129,7 @@ scoreRect.center = (SCREEN_WIDTH // 2, 60)
 healthTxt = font.render(f'Health: ',True, 'black', 'orange')
 healthRect = scoreTxt.get_rect()
 healthRect.center = (110, 300) 
-gameoverFont = pygame.font.Font('C:\\Users\\Petlja\\Desktop\\igrica\\mine-sweeper.ttf', 18)
+gameoverFont = pygame.font.Font('mine-sweeper.ttf', 18)
 #gameover
 gameover = gameoverFont.render('GAME OVER', True, 'white', 'black')
 gameoverRect= gameover.get_rect()
