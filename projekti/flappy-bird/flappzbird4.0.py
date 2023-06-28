@@ -26,9 +26,9 @@ flying = False
 game_over = False
 pipe_gap = 150
 pipe_frequency = 1500 #vrednost se oynacava u mili
-pass_pipe = pygame.time.get_ticks() - pipe_frequency
+last_pipe = pygame.time.get_ticks() - pipe_frequency
 score = 0
-last_pipe=False
+pass_pipe=False
 line=pygame.Rect(100,screen_height/2,5,936)
 
 
@@ -165,7 +165,6 @@ while run:
 
 	tekst=font.render("score:"+str(score),True,white)
 	screen.blit(tekst,(40,225))
-	#draw_text(str(score), font, white, int(screen_width / 2), 20)
 
 	#sudar
 	if pygame.sprite.groupcollide(bird_group, pipe_group, False, False) or flappy.rect.top < 0:
